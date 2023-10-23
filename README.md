@@ -45,5 +45,5 @@ Feel free to customize this template to better reflect your vision and mission f
 
 
 
-Founder-Arpit Mishra(Future CEO of Google)
-Co-founders-Sai Binayak(Future CEO of Apple) and Abhilash Mishra(Future CEO of Microsoft).
+Founder-Arpit Mishra
+Co-founders-Sai Binayak and Abhilash Mishra
