@@ -1,0 +1,362 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color: var(--primary-color);
+}
+.container{
+    height: auto;
+    width: 100vb;
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-rows:120px 1108px 260px;
+    grid-template-columns: 120px 1108px 260px;
+
+}
+.sidebar{
+    background-color: var(--secondary-color);
+    grid-row: 1/4;
+    grid-column: 1/1;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+    
+   
+   
+
+}
+.status{
+    background-color: var(--secondary-color);
+    grid-row: 1/1;
+    grid-column: 2/3;
+   
+   
+
+}
+.posts{
+    background-color: var(--secondary-color);
+    grid-row: 2/4;
+    grid-column:2/3 ;
+   
+   
+
+}
+
+.suggestions{
+    background-color: var(--secondary-color);
+    grid-row: 1/4;
+    grid-column:3/4;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    word-spacing: 15px;
+}
+
+
+.suggestions img{
+    position: relative;
+    top: 50px;
+    left: 85%;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+   
+}
+.suggestions a,p{
+    position: relative;
+    top: 300px;
+    color:lightcoral;
+    text-decoration: none;line-height: 1.7;
+}
+.suggestions a:hover{
+    text-decoration: underline;
+    color: rgb(44, 44, 230);
+}
+.suggestions p{
+    word-spacing: 0px;
+}
+
+#logo img{
+    position: relative;
+    height: 49px;
+    width: 47px;
+    border-radius: 5px;
+    top: 40px;
+    left: 37px;
+    z-index: 1;
+   
+}
+#logo img:hover {
+    z-index: 0;
+   box-shadow: 1px 1px 10px red;
+
+}
+
+ul{
+    list-style-type: none;
+    height: max-content;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+.lists{
+    position: relative;
+    top: 60px;
+    line-height: 4.2;
+    left: 43px;
+
+}
+.lists i{
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+.more{
+    position: relative;
+    top: 120px;
+    
+
+}
+.home ,.explore,.search,.meassage,.notifications,.add,.profile,.options,.content{
+    display: none;
+    text-align: center;
+    height: 35px;
+    width: auto;
+  
+}
+
+#show:hover .explore{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius:5px;
+    background-color: var(--secondary-color);   
+   
+}
+#show:hover .home{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius:5px;
+    
+    background-color: var(--secondary-color);
+}
+#show:hover .search{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius:5px;
+    background-color: var(--secondary-color);
+}
+#show:hover .meassage{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius:5px;
+    background-color: var(--secondary-color);
+}
+#show:hover .notifications{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius:5px;
+    background-color:var(--secondary-color);
+}
+#show:hover .add{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius:5px;
+    background-color: var(--secondary-color);
+}
+#show:hover .profile{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius:5px;
+    background-color: var(--secondary-color)
+}
+#show:hover .options{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius:5px;
+    background-color: var(--secondary-color);
+}
+body::-webkit-scrollbar{
+    background-color: transparent;
+
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(52, 52, 194),rgb(180, 48, 48));
+    border-radius:30px ;
+   
+}
+.status-content{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 20px;
+    left: 35px;
+
+   
+}
+
+.pic{
+    text-align: center;
+    color: var(--primary-color);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid rgb(61, 61, 61);
+    background: linear-gradient(yellow,red,blue,pink,orange);
+    padding: 3px;
+}
+.pic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: blur(1px);
+    cursor: pointer;
+
+
+
+}
+
+
+.post-container {
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.post-header {
+    padding: 19px;
+    display: flex;
+    align-items: center;
+   
+    color: var(--primary-color);
+}
+
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.post-caption {
+    padding: 15px;
+    color: var(--primary-color);
+}
+
+.likes-comments {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: var(--primary-color);
+    display: flex;
+    gap: 24px;
+}
+i{
+    cursor: pointer;
+    
+}
+
+.likes-comments i{
+    padding: 5px;
+}
+.status-left{
+    font-size: 1.4rem;
+    z-index: 1;
+    color: var(--primary-color);
+    position: relative;
+    top: 30px;
+ 
+}
+.status-right{
+    font-size: 1.4rem;
+    z-index: 1;
+    color: var(--primary-color);
+    position: relative;
+    top: 30px;
+ 
+}
+
+
+
+
+.dark-theme{
+    --primary-color:white;
+    --secondary-color:black;
+    background-color: black;
+
+}
+.dark-theme .lists,
+.dark-theme #logo img,
+.dark-theme .status-content,
+.dark-theme .pic img:hover,
+.dark-theme .theme:hover {
+    z-index: 100;
+    color: aliceblue;
+}
+
+.sidebar {
+    transition: width 0.5s ease;
+}
+
+.sidebar:hover {
+    width: 150px;
+}
+
+.post-container {
+    transition: transform 0.3s ease;
+}
+
+.post-container:hover {
+    transform: scale(1.02);
+}
+
+.pic img:hover {
+    filter: blur(0);
+    transform: scale(1.1);
+}
+
+.status-content {
+    transition: transform 0.3s ease;
+}
+
+.status:hover .status-content {
+    transform: translateX(10px);
+}
+
+.theme {
+    transition: transform 0.5s ease;
+}
+
+.theme:hover {
+    transform: rotate(180deg);
+}
+
